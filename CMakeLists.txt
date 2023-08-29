@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.27)
+cmake_minimum_required(VERSION 3.24)
 project(Cave)
 set(CMAKE_CXX_FLAGS " -O3 -fPIC")
 set (CMAKE_CXX_STANDARD 14)
