@@ -155,7 +155,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="config.cc" />
+    <ClCompile Include="Game.cc" />
+    <ClCompile Include="Graphics.cc" />
     <ClCompile Include="main.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="config.hh" />
+    <ClInclude Include="Game.hh" />
+    <ClInclude Include="Graphics.hh" />
+    <ClInclude Include="rectangle.hh" />
+    <ClInclude Include="units.hh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

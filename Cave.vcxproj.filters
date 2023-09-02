@@ -18,5 +18,31 @@
     <ClCompile Include="main.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Game.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="config.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="units.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rectangle.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
