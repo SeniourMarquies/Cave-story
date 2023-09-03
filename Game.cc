@@ -5,6 +5,7 @@
 #elif _WIN32
 #include <SDL.h>   
 #endif
+#include "input.hh"
 
 
 
@@ -25,6 +26,7 @@ Game::~Game() {
 
 
 void Game::runEventLoop() {
+	Input input;
 	SDL_Event event;
 
 	bool running = true;
@@ -39,20 +41,26 @@ void Game::runEventLoop() {
 
 		const auto start_time = high_resolution_clock::now();
 
-		while (SDL_PollEvent(&event))
-		{
-			switch (event.type)
-			{
+		input.beginNewFrame();
+		while (SDL_PollEvent(&event)) {
+			switch (event.type) {
 			case SDL_KEYDOWN:
-				if (event.key.keysym.sym == SDLK_ESCAPE) {
-					running = false;
-				}
-					
+				input.keyDownEvent(event);
+				break;
+			case SDL_KEYUP:
+				input.keyUpEvent(event);
+				break;
+			case SDL_QUIT:
+				running = false;
+				break;
 			default:
 				break;
 			}
 		}
 
+		if (input.wasKeyPressed(SDL_SCANCODE_Q)) {
+			running = false;
+		}
 		// update the scene and last_updated_time
 		const auto current_time = high_resolution_clock::now();
 		const auto upd_elapsed_time = current_time - last_updated_time;

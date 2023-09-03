@@ -155,17 +155,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="animated_sprite.cc" />
     <ClCompile Include="config.cc" />
     <ClCompile Include="Game.cc" />
     <ClCompile Include="Graphics.cc" />
+    <ClCompile Include="input.cc" />
     <ClCompile Include="main.cc" />
+    <ClCompile Include="sprite.cc" />
+    <ClCompile Include="timer.cc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="animated_sprite.hh" />
     <ClInclude Include="config.hh" />
     <ClInclude Include="Game.hh" />
     <ClInclude Include="Graphics.hh" />
+    <ClInclude Include="input.hh" />
     <ClInclude Include="rectangle.hh" />
+    <ClInclude Include="sprite.hh" />
+    <ClInclude Include="timer.hh" />
     <ClInclude Include="units.hh" />
+    <ClInclude Include="vector.hh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

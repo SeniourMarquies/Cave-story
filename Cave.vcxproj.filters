@@ -27,6 +27,18 @@
     <ClCompile Include="config.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="sprite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="animated_sprite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="timer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="input.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.hh">
@@ -42,6 +54,21 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="rectangle.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sprite.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vector.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="animated_sprite.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="timer.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="input.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
